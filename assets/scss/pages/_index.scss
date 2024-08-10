@@ -1,0 +1,316 @@
+/* 頁首 */
+.header {
+  background-image: url(/assets/images/home-header.png);
+  background-size: cover;
+  max-width: 100%;
+  @include pad {
+    background-image: url(/assets/images/home-header-sm.png);
+  }
+}
+
+// @media (max-width: 992px) {
+//   .header {
+//     background-image: url(/assets/images/home-header-sm.png);
+//   }
+// }
+
+.main {
+  justify-content: right;
+  align-items: center;
+  height: 787px;
+  text-align: right;
+  @include modile {
+    height: 396px;
+  }
+}
+
+.header-text {
+  max-width: 577px;
+  color: #650300;
+}
+.header-text h1 {
+  font-size: 36px;
+  @include modile {
+    font-size: 16px;
+  }
+}
+
+.header-text h2 {
+  font-size: 64px;
+  font-weight: 600;
+  @include modile {
+    font-size: 24px;
+  }
+}
+
+.header-b {
+  width: 104px;
+  background-color: #aa0601;
+  margin-top: 4px;
+  margin-left: 474px;
+}
+.header-b a {
+  display: block;
+  padding: 6px 12px 6px 12px;
+  font-size: 20px;
+  text-align: center;
+}
+.header-b:hover {
+  background-color: #650300;
+}
+/* 特色欄位 */
+.card-row {
+  margin-left: -12px;
+  margin-right: -12px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.column {
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include pad {
+    width: 50%;
+    margin-bottom: 48px;
+  }
+
+  @include modile {
+    width: 100%;
+  }
+}
+
+.serve img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 27.4px;
+}
+.serve h2 {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 32px;
+  @include pad {
+    font-size: 24px;
+  }
+}
+
+.serve {
+  background-color: #fbf2f2;
+  padding: 80px 0px 80px 0px;
+}
+.serve h3 {
+  font-size: 24px;
+  color: #650300;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.serve p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* 鏡框系列 */
+
+.product {
+  padding: 80px 0px 80px 0px;
+}
+
+.column-p {
+  width: 33.333%;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include pad {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+}
+
+.product h2 {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.product img {
+  margin-bottom: 8px;
+}
+
+/* 聯名商品 */
+
+.co-branding {
+  background-image: url(/assets/images/index-bg.png);
+  background-size: cover;
+  padding: 80px 0px 80px 0px;
+  max-width: 100%;
+}
+.co-img {
+  background-image: url(/assets/images/home-section4-1.png);
+  max-width: 100%;
+  background-size: cover;
+  height: 240px;
+  border-right: 1px solid rgba(180, 176, 176, 0.692);
+  @include pad {
+    border-right: none;
+  }
+
+  @include modile {
+    background-image: url(/assets/images/home-section4-1-sm.png);
+  }
+}
+
+.co-img2 {
+  background-image: url(/assets/images/home-section4-2.png);
+  max-width: 100%;
+  background-size: cover;
+  height: 240px;
+  @include modile {
+    background-image: url(/assets/images/home-section4-2-sm.png);
+  }
+}
+
+.co-md {
+  width: 50%;
+  @include pad {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .co-card {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.co-branding h3 {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0px 8px 0px;
+  border-right: 1px solid rgba(180, 176, 176, 0.692);
+}
+
+.co-branding h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  @include modile {
+    font-size: 36px;
+  }
+}
+
+/* 意見回饋 */
+.comment {
+  padding: 80px 0px 80px 0px;
+}
+.column-c {
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+  @include pad {
+    width: 50%;
+    margin-bottom: 48px;
+  }
+  @include modile {
+    width: 100%;
+  }
+}
+
+.comment h2 {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.card-1 {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px #00000029;
+  height: 100%;
+}
+
+.card-1:hover {
+  box-shadow: 2px 4px 6px #d19a2cb8;
+}
+.date {
+  margin-top: 72px;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  height: 205px;
+  padding: 16px;
+}
+
+.date {
+  margin-top: auto;
+}
+
+/* 意見表 */
+
+.connection {
+  background-color: #fbf2f2;
+  padding: 80px 0px 80px 0px;
+}
+
+.connection h3 {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.p-t {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.connection-ad {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+}
+.form-in {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.form-td {
+  width: 100%;
+  height: 136px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.in-box {
+  max-width: 416px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+.contact-btn {
+  display: block;
+  width: 100%;
+  height: 56px;
+  background-color: #aa0601;
+  color: #ffffff;
+  padding: 16px 0;
+  border: #650300;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 0 transparent;
+}
+
+.contact-btn:hover {
+  box-shadow: inset 0 0 6px 2px rgb(62, 65, 73);
+}
+.contact-btn:active {
+  box-shadow: inset 0 0 6px 4px rgb(179, 182, 192);
+}

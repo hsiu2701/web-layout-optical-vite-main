@@ -1,0 +1,57 @@
+/* nav */
+.nav {
+  background-color: #aa0601;
+}
+
+.logo {
+  float: left;
+}
+.logo h1 a {
+  display: block;
+  width: 80px;
+  height: 48px;
+  background-image: url(/assets/images/logo-new_工作區域\ 1.png);
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 16px 0 15.43px 0;
+}
+
+.nav-list {
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+.border-bt:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+@media (max-width: 576px) {
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 100%;
+  }
+  .nav-list li {
+    text-align: center;
+    width: 50%;
+    border: 1px solid #ffffff;
+  }
+
+  .nav-list a:hover {
+    border-bottom: none;
+    color: #2a2727;
+  }
+}
+
+.nav-list a {
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .nav-list a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 12px 0;
+  }
+}

@@ -1,0 +1,144 @@
+/* 部落格*/
+.blog-nav {
+  background-color: #650300;
+}
+
+@media (max-width: 576px) {
+  .blog-nav {
+    display: none;
+  }
+}
+.nav-style {
+  align-items: center;
+}
+
+.blog-a {
+  gap: 48px;
+  padding: 12px 0px;
+}
+.blog-a li a {
+  padding: 12px 0px;
+}
+
+.blog-a li a:hover {
+  color: #f1c54b;
+}
+.search a :hover {
+  color: #f1c54b;
+}
+.img-w50-cover {
+  width: 49%;
+  height: 400px;
+  background-size: cover;
+}
+@media (max-width: 576px) {
+  .img-w50-cover {
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 308px;
+  }
+}
+
+.blog-img {
+  background-image: url(/assets/images/blog-1.png);
+}
+
+.blog-img2 {
+  background-image: url(/assets/images/blog-2.png);
+}
+.blog-img3 {
+  background-image: url(/assets/images/blog-3.png);
+}
+
+.blog-img4 {
+  background-image: url(/assets/images/blog-4.png);
+}
+
+.blog-img5 {
+  background-image: url(/assets/images/blog-5.png);
+}
+
+.blog-text {
+  width: 49%;
+}
+
+@media (max-width: 576px) {
+  .blog-text {
+    width: 100%;
+  }
+}
+
+.blog-ad {
+  gap: 24px;
+  margin-bottom: 60px;
+  @include modile {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
+
+.more {
+  display: inline-block;
+  font-size: 36px;
+  color: #650300;
+  font-weight: 900;
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .more {
+    display: none;
+  }
+}
+
+.p-style {
+  color: #555555;
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 16px;
+}
+
+@media (max-width: 576px) {
+  .p-style {
+    display: none;
+  }
+}
+.m-bt-124 {
+  margin-bottom: 64px;
+}
+.page {
+  justify-content: center;
+  height: 48px;
+  margin-bottom: 80px;
+}
+
+.page-a {
+  display: inline-block;
+  padding: 11px 12px;
+  border: 1px solid #555555;
+  color: #555;
+}
+.page-r {
+  border-right: none;
+}
+
+.page ol {
+  justify-content: center;
+}
+
+.page-number a {
+  display: inline-block;
+  padding: 11px 12px;
+  color: #555;
+  border: 1px solid #555555;
+  border-right: none;
+}
+
+.page-number a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.page-a:hover {
+  background-color: #f2f2f2;
+}
